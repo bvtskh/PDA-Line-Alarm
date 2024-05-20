@@ -21,8 +21,8 @@ namespace Alarmlines.Class
             DataTable resultDataError = data.Clone();
             var query = (from t1 in data.AsEnumerable()
                          join t2 in CuonLK2met.AsEnumerable()
-                         on t1.Field<string>("Part") equals t2.Field<string>("PartId") into gj
-                         from subtable in gj.DefaultIfEmpty()
+                         on t1.Field<string>("Part") equals t2.Field<string>("PartId") into gr // left join
+                         from subtable in gr.DefaultIfEmpty()
                          select new
                          {
                              WO = t1.Field<string>("WO"),
@@ -96,12 +96,13 @@ namespace Alarmlines.Class
 					FROM UPN_MINUS_INFO t0
 					WHERE PRODUCTION_ORDER_ID = '{wO}'
 					AND LINE_ID = '{line}'";
+
             var data = SQLHelper.ExecQueryDataAsDataTable(sql);
             DataTable resultDataError = data.Clone();
             var query = (from t1 in data.AsEnumerable()
                          join t2 in CuonLK2met.AsEnumerable()
-                         on t1.Field<string>("Part") equals t2.Field<string>("PartId") into gj
-                         from subtable in gj.DefaultIfEmpty()
+                         on t1.Field<string>("Part") equals t2.Field<string>("PartId") into gr
+                         from subtable in gr.DefaultIfEmpty()
                          select new
                          {
                              A = t1.Field<double>("Deduct Qty"),
