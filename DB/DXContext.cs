@@ -8,7 +8,7 @@ namespace Alarmlines.DB
     public partial class DXContext : DbContext
     {
         public DXContext()
-            : base("name=DXConnection")
+            : base("data source=172.28.10.17;initial catalog=SMT;user id=sa;password=umc@2019;MultipleActiveResultSets=True;App=EntityFramework")
         {
         }
 

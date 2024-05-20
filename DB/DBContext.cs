@@ -8,7 +8,7 @@ namespace Alarmlines
     public partial class DBContext : DbContext
     {
         public DBContext()
-            : base("name=DBContext")
+            : base("data source=172.28.6.96;initial catalog=IOT2021;persist security info=True;user id=sa;password=umc@123;MultipleActiveResultSets=True;App=EntityFramework")
         {
         }
 
