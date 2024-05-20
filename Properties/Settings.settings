@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Alarmlines.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Area" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ALL</Value>
+    </Setting>
+    <Setting Name="ComNo" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="Verify" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Unvisible</Value>
+    </Setting>
+    <Setting Name="ViewError" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Unvisible</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
